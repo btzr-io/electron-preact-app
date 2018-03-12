@@ -11,7 +11,7 @@
     "format": "pretty-quick"
   },
   "bin": {
-    "hello-app": "./cli/index.js"
+    "electron-preact-app": "./cli/index.js"
   },
   "repository": {
     "type": "git",

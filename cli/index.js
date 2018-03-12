@@ -10,10 +10,5 @@ commands['dev'] = () => {
   spawn('yarn', ['dev'], { stdio: 'inherit' })
 }
 
-// Format command
-commands['format'] = () => {
-  spawn('yarn', ['format'], { stdio: 'inherit' })
-}
-
 // Run command
 commands[cmd] && commands[cmd]()
