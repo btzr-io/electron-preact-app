@@ -1,11 +1,11 @@
 import { h, Component } from 'preact'
 import UniversalRouter from 'universal-router'
-import history from '../history'
+import history from '@root/history'
 
 class Router extends Component {
   constructor(props) {
     super(props)
-    const { routes } = this.props
+    const { routes, defaultRoute, errorRouter } = this.props
 
     const options = {
       baseName: '/',
@@ -20,6 +20,7 @@ class Router extends Component {
         console.error(error)
         // Render error page
         //console.log('Error:', error.code)
+        errorRouter && history.push({ hash: errorRouter })
       },
     }
 
@@ -37,6 +38,7 @@ class Router extends Component {
   }
 
   componentDidMount() {
+    const { defaultRouter } = this.props
     // Listen for changes to the current location.
     const unlisten = history.listen((location, action) => {
       // Get route location
@@ -44,6 +46,8 @@ class Router extends Component {
       // Resolve router
       this.resolve(route)
     })
+    // if defaultRoute
+    defaultRoute && history.push({ hash: defaultRoute })
   }
 
   render() {

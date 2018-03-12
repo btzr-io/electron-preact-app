@@ -1,8 +1,8 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-// ELECTRON_RENDERER_PROCESS_ROOT
-const root = path.resolve(__dirname, 'src/renderer/')
+// External root ( Outside node_modules )
+const root = path.resolve(__dirname, '../')
 
 module.exports = {
   module: {
@@ -27,7 +27,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@root': path.resolve(root),
+      '@root': path.resolve(root, 'src'),
     },
     extensions: ['.js', '.jsx'],
   },

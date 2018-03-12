@@ -5,12 +5,14 @@ import PropTypes from 'prop-types'
 import routes from '@root/routes'
 import store from '@root/store'
 
-import App from './app'
-import Router from './router'
+import App from '@root/components/app'
+import Router from '@root/components/router'
 
 const Root = () => (
   <Provider store={store}>
-    <Router routes={routes} />
+    <App>
+      <Router routes={routes} />
+    </App>
   </Provider>
 )
 
