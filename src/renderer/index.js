@@ -1,11 +1,10 @@
 import { h, render } from 'preact'
-import Root from './components/root'
-import history from './history'
-import styles from './css/index.css'
+
+/* Main component */
+import Root from '@root/components/root'
+
+/* Main styles */
+import styles from '@root/css/index.css'
 
 const container = document.getElementById('app')
-
 render(<Root />, container)
-
-// Init location:
-history.push({ hash: '' })
