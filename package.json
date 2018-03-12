@@ -15,17 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/btzr-io/jelly-beats.git"
+    "url": "git+https://github.com/btzr-io/electron-preact-app.git"
   },
   "author": {
     "name": "Baltazar Gomez",
     "email": "<btzr.io@gmail.com>"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/btzr-io/jelly-beats/issues"
+    "url": "https://github.com/btzr-io/electron-preact-app/issues"
   },
-  "homepage": "https://github.com/btzr-io/jelly-beats#readme",
+  "homepage": "https://github.com/btzr-io/electron-preact-app#readme",
   "dependencies": {
     "history": "^4.7.2",
     "preact": "^8.2.7",
