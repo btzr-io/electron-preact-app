@@ -1,7 +1,7 @@
 const path = require('path')
 
 // External root ( Outside node_modules )
-const root = path.resolve(__dirname, '../../')
+const root = path.resolve(__dirname, 'src')
 
 module.exports = {
   module: {
@@ -26,7 +26,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@root': path.resolve(root, 'src'),
+      '@root': path.resolve(root, 'renderer'),
     },
     extensions: ['.js', '.jsx'],
   },

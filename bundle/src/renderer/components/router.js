@@ -38,7 +38,7 @@ class Router extends Component {
   }
 
   componentDidMount() {
-    const { defaultRouter } = this.props
+    const { defaultRoute } = this.props
     // Listen for changes to the current location.
     const unlisten = history.listen((location, action) => {
       // Get route location

@@ -30,6 +30,7 @@
     "universal-router": "^6.0.0"
   },
   "devDependencies": {
+    "babel-preset-preact": "^1.1.0",
     "css-loader": "^0.28.10",
     "electron": "^1.8.3",
     "electron-builder": "^20.4.0",

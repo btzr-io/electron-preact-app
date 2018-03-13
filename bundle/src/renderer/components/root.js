@@ -10,7 +10,7 @@ import Router from './router'
 
 const Root = () => (
   <Provider store={store}>
-    <Router routes={routes} />
+    <Router routes={routes} defaultRoute={'/'} />
   </Provider>
 )
 
