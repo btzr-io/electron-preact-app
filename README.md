@@ -5,7 +5,7 @@ Create electron apps apps with no build configuration.
 ### Installation
 
 ```Shell
-yarn add electron-preact-app --dev
+yarn global add electron-preact-app
 ```
 
 ### Usage
