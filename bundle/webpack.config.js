@@ -1,5 +1,4 @@
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 // External root ( Outside node_modules )
 const root = path.resolve(__dirname, '../../')
