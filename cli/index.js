@@ -44,7 +44,7 @@ const buildApp = dir_name => {
 }
 
 // Dev command
-commands.create = app_name => {
+commands['create'] = app_name => {
   const path_dist = path.resolve(pwd, name)
   if (app_name) {
     // Build app
@@ -56,6 +56,6 @@ commands.create = app_name => {
   } else {
     console.log('Missign argument: application name')
   }
-  // Run command
-  commands[cmd] && commands[cmd](arg)
 }
+
+commands[cmd] ? commands[cmd](arg) : console.log('Invalid command:', cmd)
