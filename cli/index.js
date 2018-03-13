@@ -37,10 +37,10 @@ const updateAppName = app_name => {
   fs.writeFileSync(path_package, updatePackage)
 }
 
-const buildApp = dir_name => {
+const buildApp = app_name => {
   buildTemp(app_name)
   process.chdir(pwd)
-  duplicate(dir_name, path_bundle_temp)
+  duplicate(app_name, path_bundle_temp)
 }
 
 // Dev command
