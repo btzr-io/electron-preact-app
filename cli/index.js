@@ -45,9 +45,9 @@ const buildApp = dir_name => {
 
 // Dev command
 commands['create'] = app_name => {
-  const path_dist = path.resolve(pwd, name)
   if (app_name) {
     // Build app
+    const path_dist = path.resolve(pwd, app_name)
     console.log('Building app...')
     buildApp(app_name)
     // Install app
