@@ -11,7 +11,13 @@ yarn add electron-preact-app --dev
 ### Usage
 
 ```Shell
-electron-preact-app create <app-name>
+electron-preact-app create
+? App-name: awesome-app
+? Author: John Doe
+? Author-email: user@email.com
+? Github-username: username
+
+Building app...
 ```
 
 ### What's inside the bundle?
