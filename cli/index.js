@@ -4,11 +4,12 @@ const { spawn } = require('child_process')
 const fs = require('fs')
 const path = require('path')
 const pwd = process.cwd()
-const path_root = path_resolve(__dirname, '../')
+const path_root = path.resolve(__dirname, '../')
 const path_bundle = path.resolve(path_root, 'bundle')
 const path_bundle_temp = path.resolve(path_root, 'bundle_temp')
 
 const cmd = process.argv[2]
+const arg = process.argv[3]
 const commands = {}
 
 function duplicate(dir_name, path_bundle) {
@@ -37,6 +38,7 @@ const updateAppName = app_name => {
 }
 
 const buildApp = dir_name => {
+  buildTemp(app_name)
   process.chdir(pwd)
   duplicate(dir_name, path_bundle_temp)
 }
@@ -44,12 +46,16 @@ const buildApp = dir_name => {
 // Dev command
 commands.create = app_name => {
   const path_dist = path.resolve(pwd, name)
-  buildTemp(app_name)
-  buildApp(app_name)
-  // Install app
-  process.chdir(path_dist)
-  spawn('yarn', ['install'], { stdio: 'inherit' })
+  if (app_name) {
+    // Build app
+    console.log('Building app...')
+    buildApp(app_name)
+    // Install app
+    process.chdir(path_dist)
+    spawn('yarn', ['install'], { stdio: 'inherit' })
+  } else {
+    console.log('Missign argument: application name')
+  }
+  // Run command
+  commands[cmd] && commands[cmd](arg)
 }
-
-// Run command
-commands[cmd] && commands[cmd]()
