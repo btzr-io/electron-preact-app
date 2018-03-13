@@ -11,7 +11,7 @@ yarn add electron-preact-app --dev
 ### Usage
 
 ```Shell
-electron-preact-app create
+$ electron-preact-app create
 ? App-name: awesome-app
 ? Author: John Doe
 ? Author-email: user@email.com
