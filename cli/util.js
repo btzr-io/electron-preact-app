@@ -1,3 +1,4 @@
+// Modules
 const path = require('path')
 
 const replace = (str, search, remplacer) => str.replace(new RegExp(search, 'g'), remplacer)
