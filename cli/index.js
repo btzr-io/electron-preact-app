@@ -44,10 +44,10 @@ const buildApp = dir_name => {
 // Dev command
 commands.create = app_name => {
   const path_dist = path.resolve(pwd, name)
-  const path_build = path.resolve(path_root, name)
-
-  buildApp(name)
+  buildTemp(app_name)
+  buildApp(app_name)
   // Install app
+  process.chdir(path_dist)
   spawn('yarn', ['install'], { stdio: 'inherit' })
 }
 
