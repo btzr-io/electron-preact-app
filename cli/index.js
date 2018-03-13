@@ -3,7 +3,7 @@
 const { spawn } = require('child_process')
 const fs = require('fs')
 const path = require('path')
-const pwd = process.pwd()
+const pwd = process.cwd()
 const path_root = path_resolve(__dirname, '../')
 const path_bundle = path.resolve(path_root, 'bundle')
 const path_bundle_temp = path.resolve(path_root, 'bundle_temp')
