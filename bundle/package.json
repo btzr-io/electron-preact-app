@@ -1,5 +1,5 @@
 {
-  "name": "{name}",
+  "name": "{app_name}",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -11,17 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{user}/{name}.git"
+    "url": "git+https://github.com/{repo_user}/{app_name}.git"
   },
   "author": {
-    "name": "{author}",
-    "email": "{email}"
+    "name": "{dev_name}",
+    "email": "{dev_email}"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/{user}/{name}/issues"
+    "url": "https://github.com/{repo_user}/{app_name}/issues"
   },
-  "homepage": "https://github.com/{user}/{name}#readme",
+  "homepage": "https://github.com/{repo_user}/{app_name}#readme",
   "dependencies": {
     "history": "^4.7.2",
     "preact": "^8.2.7",
