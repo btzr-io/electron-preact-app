@@ -29,6 +29,7 @@ const updateAppName = app_name => {
 const buildApp = (app_name, path_dist) => {
   buildTemp(app_name)
   fs.copySync(path_bundle_temp, path_dist)
+  fs.removeSync(path_bundle_temp)
 }
 
 // Dev command
