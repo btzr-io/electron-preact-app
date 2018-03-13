@@ -1,8 +1,7 @@
 {
-  "name": "electron-preact-app",
+  "name": "{name}",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
@@ -10,42 +9,38 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
     "format": "pretty-quick"
   },
-  "bin": {
-    "electron-preact-app": "./cli/index.js"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/btzr-io/electron-preact-app.git"
+    "url": "git+https://github.com/{user}/{name}.git"
   },
   "author": {
-    "name": "Baltazar Gomez",
-    "email": "<btzr.io@gmail.com>"
+    "name": "{author}",
+    "email": "{email}"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/btzr-io/electron-preact-app/issues"
+    "url": "https://github.com/{user}/{name}/issues"
   },
-  "homepage": "https://github.com/btzr-io/electron-preact-app#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/{user}/{name}#readme",
+  "dependencies": {
+    "history": "^4.7.2",
+    "preact": "^8.2.7",
+    "preact-redux": "^2.0.3",
+    "redux": "^3.7.2",
+    "universal-router": "^6.0.0"
+  },
   "devDependencies": {
-    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
     "electron": "^1.8.3",
     "electron-builder": "^20.4.0",
     "electron-webpack": "^1.13.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "history": "^4.7.2",
     "husky": "^0.15.0-rc.8",
     "postcss-loader": "^2.1.1",
-    "preact": "^8.2.7",
-    "preact-redux": "^2.0.3",
     "prettier": "^1.11.1",
     "pretty-quick": "^1.4.1",
     "prop-types": "^15.6.1",
-    "redux": "^3.7.2",
     "source-map-support": "^0.5.3",
     "style-loader": "^0.20.3",
-    "universal-router": "^6.0.0",
     "webpack": "^3.11.0"
   }
 }
