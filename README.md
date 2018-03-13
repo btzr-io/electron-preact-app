@@ -1,6 +1,6 @@
 # electron-preact-app
 
-Create electron apps apps with no build configuration.
+Create electron apps with no build configuration.
 
 ### Installation
 
