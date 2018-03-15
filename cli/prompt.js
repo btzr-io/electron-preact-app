@@ -5,28 +5,22 @@ const prompt = () => {
     {
       type: 'input',
       name: 'app_name',
-      message: 'App-name:',
+      message: 'app_name:',
     },
     {
       type: 'input',
-      name: 'dev_name',
-      message: 'Author:',
-      default: () => 'John Doe',
+      name: 'app_author',
+      message: 'app_author:',
+      default: () => 'name',
     },
-
+    /* Disable repository for now...
     {
       type: 'input',
-      name: 'dev_email',
-      message: 'Author-email:',
-      default: () => 'user@email.com',
+      name: 'app_repo',
+      message: 'app_repo:',
+      default: () => 'repository',
     },
-
-    {
-      type: 'input',
-      name: 'repo_user',
-      message: 'Github-username:',
-      default: () => 'username',
-    },
+    */
   ]
   return inquirer.prompt(questions)
 }

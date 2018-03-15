@@ -9,14 +9,11 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
     "format": "pretty-quick"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/{repo_user}/{app_name}.git"
-  },
+  "repository": "git+{app_repo}/{app_name}.git",
   "author": "{app_author}",
   "license": "MIT",
-  "bugs": "https://github.com/{repo_user}/{app_name}/issues",
-  "homepage": "https://github.com/{repo_user}/{app_name}#readme",
+  "bugs": "{app_repo}/{app_name}/issues",
+  "homepage": "{app_repo}/{app_name}#readme",
   "dependencies": {
     "history": "^4.7.2",
     "preact": "^8.2.7",

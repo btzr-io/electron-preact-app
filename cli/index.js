@@ -1,11 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-// Path
-const path = require('path')
-const path_pwd = process.cwd()
-
-// Cli-app
+// Modules
+const { parseArgs } = require('./util.js')
 const prompt = require('./prompt.js')
 const buildApp = require('./build.js')
 
@@ -14,18 +11,26 @@ const input = process.argv.slice(2)
 const args = input.slice(1)
 const cmd = input[0]
 const commands = {}
+const listArgs = {
+  app_name: 'name:',
+  app_author: 'author:',
+  app_repo: 'repository:',
+}
 
 // create command
 commands['create'] = args => {
-  const app_name = null
-  prompt().then(options => {
-    const { app_name } = options
-    if (app_name) {
+  if (args) {
+    const parsedArgs = parseArgs(args, listArgs)
+    const { app_name } = parsedArgs
+    app_name && buildApp(app_name, parsedArgs)
+  } else {
+    prompt().then(options => {
+      // Get options
+      const { app_name } = options
       // Build app
-      const path_dist = path.resolve(path_pwd, app_name)
-      buildApp(app_name, path_dist, options)
-    }
-  })
+      app_name && buildApp(app_name, options)
+    })
+  }
 }
 
 // Run command
