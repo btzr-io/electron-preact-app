@@ -23,14 +23,16 @@ $ electron-preact-app create <app-name>
 ```
 
 ### Commands
- Full list of supported commands
+
+ Full list of supported commands:
  
 | Command | Args | Descrition |
 | --- | --- | --- |
 | `create` | `<app-name>` | Create a new project inside the current folder. | 
 
 ### Flags
- Full list of supported flags `(experimental)`
+
+ Full list of supported flags: `experimental`
  
 | Flags | Description |
 | --- | --- |
