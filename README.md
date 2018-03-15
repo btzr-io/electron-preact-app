@@ -10,6 +10,9 @@ Create electron apps with no build configuration.
 ```Shell
 yarn global add electron-preact-app
 ```
+```Shell
+npm -g electron-preact-app
+```
 
 ### Usage
 
