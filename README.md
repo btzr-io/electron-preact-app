@@ -19,6 +19,10 @@ Creating a new project:
 ```Shell
 $ electron-preact-app create <app-name> 
 ```
+Addign github [common-files](https://github.com/kmindi/special-files-in-repository-root) (README/CHANGELOG...):
+```Shell
+$ electron-preact-app create <app-name> --github
+```
 
 ### What's inside the bundle?
 
