@@ -3,7 +3,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/btzr-io/electron-preact-app.svg?style=for-the-badge)](https://github.com/btzr-io/electron-preact-app/network)
 [![GitHub license](https://img.shields.io/github/license/btzr-io/electron-preact-app.svg?style=for-the-badge)](https://github.com/btzr-io/electron-preact-app/blob/master/LICENSE)
 
-Create electron apps with no build configuration.
+Create electron apps with no build configuration:  :rocket: +  :atom_symbol:
 
 ### Installation
 
