@@ -13,14 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/{repo_user}/{app_name}.git"
   },
-  "author": {
-    "name": "{dev_name}",
-    "email": "{dev_email}"
-  },
+  "author": "{app_author}",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/{repo_user}/{app_name}/issues"
-  },
+  "bugs": "https://github.com/{repo_user}/{app_name}/issues",
   "homepage": "https://github.com/{repo_user}/{app_name}#readme",
   "dependencies": {
     "history": "^4.7.2",

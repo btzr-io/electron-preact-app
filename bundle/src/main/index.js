@@ -8,12 +8,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 let mainWindow
 
 function createMainWindow() {
-  const window = new BrowserWindow({
-    webPreferences: {
-      //nodeIntegration: isDevelopment,
-      //preload:  path.join(__dirname, 'renderer.js')
-    },
-  })
+  const window = new BrowserWindow()
 
   //if (isDevelopment) {
   window.webContents.openDevTools()
