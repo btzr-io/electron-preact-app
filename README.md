@@ -17,7 +17,7 @@ npm -g electron-preact-app
 ### Usage
 
 ```Shell
-$ electron-preact-app create [ <app-name> | name:<app-name> ]
+$ electron-preact-app create <app-name> 
 ```
 
 ### What's inside the bundle?
