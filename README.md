@@ -22,11 +22,15 @@ Creating a new project:
 $ electron-preact-app create <app-name> 
 ```
 
-`--github`: Include github [common-files](https://github.com/kmindi/special-files-in-repository-root) 
+### Commands
+| Command | Args | Descrition |
+| --- | --- | --- |
+| `create` | `<app-name>` | Create a new project inside the current folder. | 
 
-```Shell
-$ electron-preact-app create <app-name> --github
-```
+### Flags
+| Flags | Description |
+| --- | --- |
+| `--github` | Include github [common-files](https://github.com/kmindi/special-files-in-repository-root) |
 
 ### What's inside the bundle?
 
