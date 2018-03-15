@@ -15,11 +15,15 @@ npm -g electron-preact-app
 ```
 
 ### Usage
+
 Creating a new project:
+
 ```Shell
 $ electron-preact-app create <app-name> 
 ```
-Addign github [common-files](https://github.com/kmindi/special-files-in-repository-root):
+
+`--github`: Include github [common-files](https://github.com/kmindi/special-files-in-repository-root) 
+
 ```Shell
 $ electron-preact-app create <app-name> --github
 ```
