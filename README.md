@@ -15,7 +15,7 @@ npm -g electron-preact-app
 ```
 
 ### Usage
-
+Creating a new project:
 ```Shell
 $ electron-preact-app create <app-name> 
 ```
