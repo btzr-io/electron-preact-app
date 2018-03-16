@@ -38,7 +38,6 @@ $ electron-preact-app create <app-name>
 | --- | --- |
 | `--git` | Initialize as git repository |
 | `--github` | Include github [common-files](https://github.com/kmindi/special-files-in-repository-root) |
-| `--all` | Use all the avabible flags |
 
 
 ### What's inside the bundle?
