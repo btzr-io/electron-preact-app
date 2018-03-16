@@ -39,7 +39,7 @@ $ electron-preact-app create <app-name>
  
 | Flags | Description |
 | --- | --- |
-| `--git` | Initialize as git repository |
+| `--git` | Initialize as a git repository. |
 | `--github` | Include github [common-files](https://github.com/kmindi/special-files-in-repository-root) |
 
 
