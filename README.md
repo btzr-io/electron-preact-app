@@ -1,7 +1,8 @@
 # electron-preact-app :atom_symbol: :arrow_right: :rocket:
 [![GitHub issues](https://img.shields.io/github/issues/btzr-io/electron-preact-app.svg?style=for-the-badge)](https://github.com/btzr-io/electron-preact-app/issues)
-[![GitHub forks](https://img.shields.io/github/forks/btzr-io/electron-preact-app.svg?style=for-the-badge)](https://github.com/btzr-io/electron-preact-app/network)
 [![GitHub license](https://img.shields.io/github/license/btzr-io/electron-preact-app.svg?style=for-the-badge)](https://github.com/btzr-io/electron-preact-app/blob/master/LICENSE)
+[![GitHub code size in bytes](https://img.shields.io/github/repo-size/btzr-io/electron-preact-app.svg?style=for-the-badge)](https://github.com/btzr-io/electron-preact-app)
+![David](https://img.shields.io/david/btzr-io/electron-preact-app.svg?style=for-the-badge)
 
 Create electron apps with no build configuration 
 
