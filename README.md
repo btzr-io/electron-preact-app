@@ -32,7 +32,7 @@ $ electron-preact-app create <app-name>
 
 ### Flags
 
- Full list of supported flags: `experimental`
+ Full list of supported flags:
  
 | Flags | Description |
 | --- | --- |
