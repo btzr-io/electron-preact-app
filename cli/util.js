@@ -21,7 +21,7 @@ const removeProps = (obj, props) => {
   return obj
 }
 
-// Parse Cli args
+// Parse args
 const parseArgs = (args, list) => {
   const parsedArgs = {}
   Object.entries(list).map(([key, value], index) => {
@@ -30,4 +30,13 @@ const parseArgs = (args, list) => {
   return parsedArgs
 }
 
-module.exports = { replace, replaceAll, removeProps, parseArgs }
+// Parse flags
+const parseFlags = (flags, list) => {
+  const parsedFlags = {}
+  Object.entries(list).map(([key, value]) => {
+    parsedFlags[key] = flags.includes(value)
+  })
+  return parsedFlags
+}
+
+module.exports = { replace, replaceAll, removeProps, parseArgs, parseFlags }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./cli/index.js create",
+    "test": "./cli/index.js create nope --git --github",
     "format": "pretty-quick"
   },
   "bin": {
