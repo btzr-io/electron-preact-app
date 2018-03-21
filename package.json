@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/btzr-io/electron-preact-app#readme",
   "dependencies": {
-    "fs-extra": "^5.0.0",
-    "inquirer": "^5.1.0"
+    "fs-extra": "^5.0.0"
   },
   "devDependencies": {
     "husky": "^0.15.0-rc.8",

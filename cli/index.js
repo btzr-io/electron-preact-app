@@ -3,7 +3,6 @@
 
 // Modules
 const { parseArgs, parseFlags } = require('./util.js')
-const prompt = require('./prompt.js')
 const buildApp = require('./build.js')
 
 // Options
@@ -37,13 +36,6 @@ const commands = {
       const parsedArgs = parseArgs(args, listArgs)
       const { app_name } = parsedArgs
       app_name && buildApp(app_name, parsedArgs, parsedFlags)
-    } else {
-      prompt().then(options => {
-        // Get options
-        const { app_name } = options
-        // Build app
-        app_name && buildApp(app_name, options)
-      })
     }
   },
 }
