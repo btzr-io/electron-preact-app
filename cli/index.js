@@ -26,7 +26,6 @@ const listArgs = {
 const listFlags = {
   flag_all: '--all',
   flag_git: '--git',
-  flag_github: '--github',
 }
 
 const commands = {

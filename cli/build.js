@@ -37,8 +37,7 @@ const buildApp = (app_name, options, flags) => {
   fs.copySync(path_bundle_temp, path_dist)
   // Remove temp bundle
   fs.removeSync(path_bundle_temp)
-  // Init git repository
-  console.log(flag_git)
+
   flag_git && spawn('git', ['init'], { stdio: 'inherit', cwd: path_dist })
   // Install app
   spawn('yarn', ['install'], { stdio: 'inherit', cwd: path_dist })
@@ -69,13 +68,13 @@ const updateAppData = options => {
 }
 
 const extraBundle = flags => {
-  const { flag_github } = flags
+  const { flag_git } = flags
   const bundle = {
-    github() {
+    git() {
       fs.copySync(path_bundle_github, path_bundle_temp)
     },
   }
-  flag_github && bundle.github()
+  flag_git && bundle.git()
 }
 
 module.exports = buildApp
