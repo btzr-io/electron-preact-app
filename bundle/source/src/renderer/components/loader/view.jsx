@@ -1,5 +1,5 @@
 import { h, Component } from 'preact'
-import styles from './styles.css'
+import styles from '@css/loader.css'
 
 class Loader extends Component {
   constructor() {
