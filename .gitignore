@@ -62,4 +62,5 @@ typings/
 .env
 
 # Dist / build directory
-dist
+dist/
+test/
